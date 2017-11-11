@@ -1,0 +1,12 @@
+body {
+	background-color: #000;
+}
+nav {
+	background-color: white;
+	color: #000;
+}nav ul li a {
+	color: #000;
+}
+nav < a {
+	color: red;
+}
