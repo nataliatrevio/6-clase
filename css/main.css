@@ -1,12 +1,103 @@
+* {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
 body {
-	background-color: #000;
+	/*color de fondo*/
+	background-color: #FFA996;
+	/*color de texto*/
+	color: #455C7B;
 }
+
+.wrapper {
+	max-width: 1024px;
+	width: 90%;
+	min-width: 300px;
+	margin: 0 auto;
+}
+
+main.wrapper {
+	margin-top: 80px;
+	height: 600px;
+	/* auto, hidden */
+	overflow: scroll;
+	overflow-y: scroll;
+	overflow-x: scroll;
+}
+
+a {
+	text-decoration: none;
+}
+
+::selection {
+	/* color de selección s*/
+	background-color: #455C7B;
+	color: #FFBC67;
+}
+
 nav {
-	background-color: white;
-	color: #000;
-}nav ul li a {
-	color: #000;
+	/* color de fondo bloque de menú*/
+	background-color: #685C79;
+	/*color de texto de bloque de menú*/
+	color: #FFBC67;
+	height: 36px;
+	position: fixed;
+	width: 100%;
+	top: 0px;
+	border-bottom: 5px solid #AC6C82; 
+	z-index: 1;
 }
-nav < a {
-	color: red;
+
+/*nav ul li a {
+	color: #000;
+}*/
+
+nav ul {
+	padding: 0;
+}
+
+nav a {
+	color: #FFBC67;
+}
+
+nav li {
+	/*para mover elementos de lista del menú a la izquierda solo float left*/
+	float: left;  
+	width: 25%;
+	list-style-type: none;
+	padding: 7px;
+}
+
+nav li > ul {
+	background-color: white;
+	float: left;
+	position: relative;
+	top: 10px;
+	display: none;
+}
+
+nav li a {
+	display: block;
+	height: 31px
+	padding: 7px;
+}
+
+nav li:hover > ul {
+	display: block;
+}
+
+nav li:hover {
+	background-color: gray;
+	color: white;
+}
+
+nav li > ul > li {
+	width: 100%;
+} 
+
+a#front {
+	position: fixed;
+	top: 0;
 }
